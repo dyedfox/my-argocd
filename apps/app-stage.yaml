@@ -14,7 +14,7 @@ spec:
     path: environments/stage
   destination:
     server: https://kubernetes.default.svc
-    namespace: uptime-kuma-stage  # Add explicit namespace
+    #namespace: uptime-kuma-stage  # Add explicit namespace
   syncPolicy:
     automated:
       prune: true
@@ -22,6 +22,6 @@ spec:
       allowEmpty: false
     syncOptions:
       - Validate=true
-      - CreateNamespace=true  # Change to true to auto-create namespace
+      - CreateNamespace=false  # Change to true to auto-create namespace
       - PrunePropagationPolicy=foreground
       - PruneLast=true
