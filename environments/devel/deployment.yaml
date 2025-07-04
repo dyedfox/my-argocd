@@ -37,7 +37,7 @@ spec:
   ports:
     - protocol: TCP
       port: 3007
-      targetPort: 3007
+      targetPort: 3001
   type: LoadBalancer
 ---
 apiVersion: v1
