@@ -36,8 +36,8 @@ spec:
     app: uptime-kuma
   ports:
     - protocol: TCP
-      port: 3001
-      targetPort: 3001
+      port: 3007
+      targetPort: 3007
   type: LoadBalancer
 ---
 apiVersion: v1
