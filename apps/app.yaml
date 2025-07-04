@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-foo
+  name: uptime-kuma
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/dyedfox/my-argocd.git
     targetRevision: HEAD
-    path: environments/stage/
+    path: environments/stage
   destination:
     server: https://kubernetes.default.svc
   syncPolicy:
